@@ -1,53 +1,31 @@
 {
-  "name": "sepotify",
-  "description": "A Spotify client",
+  "name": "spotify-app",
   "version": "0.1.0",
-  "private": false,
-  "author": {
-    "name": "Denis Setiawan",
-    "email": "denisetyawanseven@gmail.com",
-    "url": "https://www.linkedin.com/in/denisetyawan"
-  },
-  "bugs": {
-    "email": "denisetyawanseven@gmail.com",
-    "url": "https://https://github.com/denisetyawan/sepotify/issues"
-  },
-  "keywords": [
-    "spotify",
-    "music",
-    "api",
-    "client"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/denisetyawan/sepotify.git"
-  },
-  "engines": {
-    "node": "16",
-    "npm": ">=8"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "node ./scripts/pre-commit",
-      "pre-push": "node ./scripts/pre-push"
-    }
-  },
+  "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "husky": "^4.3.8",
+    "axios": "^0.26.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.8",
     "react-scripts": "5.0.0",
+    "react-toastify": "^8.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "npx prettier --write src/* && npx eslint src/* --quiet --fix",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -60,16 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint": "^8.11.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "2.6.0"
   }
 }
