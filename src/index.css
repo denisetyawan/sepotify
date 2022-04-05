@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
@@ -22,7 +22,7 @@ code {
 :root {
   --green: #12c57a;
   --gray: #949494;
-  --red: #ff3434;
+  --red: #34ddf3;
 }
 
 hr {
